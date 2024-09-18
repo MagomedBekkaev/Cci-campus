@@ -1,11 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hi</h1>
-</body>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Ceci est un site de test en HTML">
+        <title>Mon super site</title>
+        <link rel="stylesheet" href="/BERTHOMME/html/assets/style.css">
+    </head>
+    <body>
+        <!-- <h1>Hi</h1> -->
+        <div class="contactForm">
+            <form method="post">
+                <label for="name">NAME *</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">EMAIL *</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">SUBJECT *</label><br>
+                <input id="subject" name="subject" required><br><br>
+
+                <label for="message">HOW CAN I HELP? *</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                
+                <input type="submit" value="SUBMIT CONTACT">
+            </form>
+        </div>
+        <div class="contactInfo">
+            <h2>Nice to Hear From You</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis accusamus fugiat necessitatibus incidunt assumenda fugit sed, nihil dicta minus voluptatem, nostrum, delectus quas in doloremque dolores ab facere nam mollitia pariatur possimus nesciunt doloribus impedit consequatur! Repudiandae dolore at necessitatibus, vitae repellat, architecto, aliquam hic dolor inventore ut aperiam unde.</p>
+            
+            <h2>Contact Information</h2>
+            
+            <section>
+                <h3>Business Hours</h3>
+                <p>Our support Hotline is available 24 Hours a day: (84) 935 815 989</p>
+                <ul>
+                    <li>Monday - Friday: 8am to 6pm</li>
+                    <li>Saturday: 10am to 2pm</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </section>
+            
+            <section>
+            <h3>Building Address</h3>
+            <p>164 Nguyen Xi, 26 Ward, Binh Thanh District, Ho Chi Minh City, Vietnam</p>
+            </section>
+            
+            <section>
+            <h3>Email</h3>
+            <p>
+                <a href="mailto:tranmautritam@gmail.com">tranmautritam@gmail.com</a>
+                <span> - </span>
+                <a href="mailto:thingocbich.dang@gmail.com">thingocbich.dang@gmail.com</a>
+            </p>
+            </section>
+            
+            <section>
+            <h3>Cellphone</h3>
+            <p>+84 935 815 989</p>
+            </section>
+        </div>
+    </body>
 </html>
