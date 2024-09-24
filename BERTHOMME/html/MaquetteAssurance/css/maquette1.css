@@ -1,0 +1,131 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/* NAVBAR */
+
+header {
+    position: relative;
+    padding: 10px 20px;
+}
+
+header div:first-child {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header nav .logo {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav, ul {
+    font-size: 22px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+header div:last-child {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.login {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333;
+    padding: 15px 25px;
+    border: 1px solid #ddd;
+}
+
+.inscription {
+    margin-left: 10px;
+    background-color: #e35c03;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+
+.inscription:hover {
+    background-color: #ba4c02;
+}
+
+.login:hover {
+    background-color: #f9f9f9;
+}
+
+/* NAVBAR END */
+
+
+/* HERO */
+
+.zoneGauche, .zoneDroite {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+
+.imageHero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/mecAuVolant.jpg);
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    width: 50%;
+    height: 100%;
+}
+
+.zoneGauche {
+    max-width: 600px;
+    padding: 150px;
+}
+
+.zoneGauche h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.zoneGauche p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #757575;
+}
+
+.codeP {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333;
+    padding: 15px 25px;
+    border: 1px solid #ddd;
+}
+
+.devis {
+    margin-left: 10px;
+    background-color: #e35c03;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border: none;
+}

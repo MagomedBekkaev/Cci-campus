@@ -1,0 +1,78 @@
+.zoneGauche, .zoneDroite {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+}
+
+.zoneGauche {
+    margin: 30px 0 0 30px;
+}
+
+.zoneDroite {
+    margin-left: 0;
+}
+
+input, textarea {
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 55px;
+}
+
+textarea {
+    height: 200px;
+}
+
+label {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.submit {
+    width: auto;
+    background-color: #1ABC9C;
+    font-size: large;
+    font-weight: 1000;
+    text-transform: uppercase;
+    color: white;
+}
+
+.etoile {
+    color: #1ABC9C;
+}
+
+ul, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #1ABC9C;
+}
+
+.zoneDroite p a {
+    color: rgba(25, 57, 57, 0.586);
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    margin-bottom: 0
+}
+
+p, li {
+    color: rgba(25, 57, 57, 0.586);
+}

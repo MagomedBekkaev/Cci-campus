@@ -1,0 +1,63 @@
+/* div{
+    color:lightblue;
+    background-color: black;
+}
+
+#maSuperDiv{
+    color: red;
+    background-color: yellow;
+    border: 20px solid black;
+}
+
+.caDechire{
+    color: green;
+    background-color: rgb(220, 192, 255);
+}
+
+section div strong{
+    color: blue;
+    background-color: white;
+}
+
+#imageBg {
+    background-image: url(/BERTHOMME/html/images/cyberpunk.jpg) ;
+    background-size: cover;
+} */
+
+.btnCarre{
+    background-color: #7BC300;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.btnArrondi{
+    background-color: #7BC300;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btnTresArrondi{
+    background-color: #7BC300;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+p{
+    color:darkblue;
+    font-size: large;
+    font-weight: 1000;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: underline;
+    text-justify:inter-cluster;
+    text-transform: capitalize;
+    line-height: 100px;
+}
