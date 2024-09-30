@@ -76,3 +76,25 @@ p {
 p, li {
     color: rgba(25, 57, 57, 0.586);
 }
+
+
+@media screen and (max-width: 576px) {
+    .container {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .zoneDroite, .zoneGauche {
+        width: 100%;
+        margin: 0;
+    }    
+}
+
+@media screen and (min-width: 577px) and (max-width: 1200px) {
+    .zoneDroite, .zoneGauche {
+        width: 100%;
+        margin: 0;
+    }
+    
+}

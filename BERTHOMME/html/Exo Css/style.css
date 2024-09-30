@@ -1,0 +1,23 @@
+div::after{
+    content:"> - +";
+    color: red;
+}
+
+div::before{
+    content:"< - +";
+    color: blue;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li::before{
+    font-family: "Font Awesome 5 Free";
+    /* content:"f099 "; */
+    color: green;
+}
+
+ul{
+    color: red;
+}
