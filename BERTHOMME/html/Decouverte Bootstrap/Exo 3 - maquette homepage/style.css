@@ -1,0 +1,55 @@
+:root {
+    --rouge: #e84545; 
+    --bleu1: #2b2e4a;
+    --violet: #53354a;
+    --blue2: #3a3e64;
+    --blueFonce: #313454;
+    --openSans: "Open Sans", sans-serif;
+    --raleway: "Raleway", sans-serif;
+    
+}
+
+h1, h2, h3 {
+    font-family: var(--openSans)
+}
+p, a, div, ul, li {
+    font-family: var(--raleway);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    background-image: url('images/projet4.jpg');
+    background-image: ta;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.container-fluid {
+    /* filter: grayscale(50%); */
+    filter: sepia(50%);
+}
+
+.container-fluid, .nav-link   {
+    color: #FFFFFF;    
+}
+
+.navbar-toggler-icon {
+    background-color: none;
+}
+
+header, #bandeauHero   {
+    background: transparent;
+}
+
+/* HEADER */
+
+.navbar-light bg-light {
+    background-color: var(--bleu1);
+}
