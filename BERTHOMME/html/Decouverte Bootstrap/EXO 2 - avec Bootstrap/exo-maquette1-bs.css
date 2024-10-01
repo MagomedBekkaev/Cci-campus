@@ -1,0 +1,376 @@
+/* GENERAL */
+* {
+    box-sizing:border-box;
+}
+html {
+    font-size:62.5%;
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/Myriad-Pro-Bold.ttf') format('TrueType');
+    font-weight: bold;
+    font-style: normal;
+    font-display:swap;
+}
+:root {
+    --orange:#e35c03;
+    --grisFonce:#2c211d;
+    --texteGris:#757575;
+    --borduresGrises:#cbcbcb;
+    --blanc:#FFF;
+    --blancCasse:#f4f5f7;
+    --poppins:"Poppins", sans-serif;
+    --myriad: "Myriad Pro", Arial, sans-serif;
+}
+p, a, div, ul, li {
+    font-family: var(--poppins);
+}
+h1, h2, h3 {
+    font-family: var(--myriad);
+}
+a {
+    text-decoration:none;
+}
+h1 {
+    font-size:6.4rem;
+}
+h2 {
+    font-size:4.8rem;
+    margin-bottom:1rem;
+}
+h3 {
+    font-size:2.4rem;
+}
+
+.carre1, .carre2, .carre3, .carre4 {
+    position:absolute;
+}
+.carre1, .carre2 {
+    background-color:var(--blancCasse);
+}
+.carre3, .carre4 {
+    background-color:var(--orange);
+    height:60px;
+    width:60px;
+}
+.carre1 {
+    height:250px;
+    width:290px;
+}
+.carre2 {
+    height:100px;
+    width:100px;
+}
+
+/* HEADER */
+header {
+    background-color:var(--blancCasse);
+}
+header .logo {
+    font-size:2.4rem;
+    font-weight:bold;
+    margin-left:3rem;
+ }
+header .menu ul li {
+    padding-right:2.5rem;
+}
+header .menu .list-inline .list-inline-item a {
+    color:var(--grisFonce);
+    font-weight:600;
+    font-size:2rem;
+}
+header .actions {
+    padding-right:3rem;
+}
+header .actions .btn1, header .actions .btn2 {
+    font-weight:600;
+    padding:1rem 2.5rem;
+    font-size:1.5rem;
+}
+
+header .actions .btn1 {
+    border:2px solid var(--borduresGrises);
+    color:var(--borduresGrises);
+    margin-right:1rem;
+}
+header .actions .btn2 {
+    border:2px solid var(--orange);
+    background-color:var(--orange);
+    color:var(--blanc);
+}
+
+/* BANDEAU HERO */
+#bandeauHero {
+    background-color:var(--blancCasse);
+}
+#bandeauHero .heroDroite img {
+    width:100%;
+}
+.heroGauche {
+    padding:20rem;
+}
+.heroGauche p {
+    font-size:1.8rem;
+    color:var(--texteGris);
+}
+
+.heroGauche input[type=number] {
+    height:40px;
+    width:180px;
+    border:1px solid var(--borduresGrises);
+    color:var(--texteGris);
+    text-align:center;
+    font-size:1.4rem;
+}
+.heroGauche input[type=submit] {
+    height:43px;
+    border:1px solid var(--orange);
+    background-color:var(--orange);
+    color:var(--blanc);
+    border:none;
+    padding:1rem 2.5rem;
+    font-weight:bold;
+    font-size:1.6rem;
+}
+.heroGauche .avis {
+    margin-top:5rem;
+}
+.heroGauche .avis .notes {
+    font-weight:bold;
+    margin-top:1rem;
+}
+.heroGauche .avis small {
+    font-size:1.8rem;
+    color:var(--texteGris);
+}
+.heroGauche .avis span {
+    font-size:1.5rem;
+}
+.heroGauche i {
+    font-size:2rem;
+    color:var(--orange);
+}
+
+/* DEVIS */
+#devis {
+    margin-top:10rem;
+    margin-bottom:10rem;
+
+}
+#devis .devisGauche {
+    position:relative;
+}
+#devis .devisGauche .carre1 {
+    left: -10%;
+    top: -10%;
+    z-index:1;
+}
+#devis .devisGauche .carre2 {
+    right: 32%;
+    bottom: -5%;
+    z-index:60;
+}
+#devis .devisGauche .carre3 {
+    left: -13%;
+    bottom: 25%;
+    z-index:60;
+}
+#devis .devisGauche .carre4 {
+    right: 50%;
+    top: -16%;
+    z-index:60;
+}
+#devis .devisGauche img {
+    position:relative;
+    z-index:50;
+}
+#devis .devisDroite p {
+    color:var(--texteGris);
+    font-size:1.8rem;
+}
+#devis .devisDroite .devisArgs {
+    margin-bottom:1.5rem;
+}
+#devis .devisDroite .devisArgs h3 {
+    margin-bottom:.5rem;
+}
+#devis .devisDroite .devisArgs p {
+    margin:0;
+}
+
+/* REASSURANCE */
+#reassurance {
+    padding-top:10rem;
+    padding-bottom:10rem;
+}
+#reassurance p {
+    color:var(--texteGris);
+    font-size:1.8rem;
+}
+#reassurance .imagesBox .box {
+    border:2px solid #d5d5d5;
+    padding-top:3rem;
+    padding-bottom:3rem;
+}
+#reassurance .imagesBox .box .iconeBox {
+    font-size:8rem;
+    color:var(--orange);
+}
+#reassurance .imagesBox a {
+    color:var(--orange);
+    font-weight:600;
+    font-size:1.8rem;
+}
+#reassurance p, #reassurance a {
+    font-family: var(--poppins);
+}
+
+/* Déclarations */
+#declarations {
+    margin-top:10rem;
+    margin-bottom:10rem;
+}
+#declarations .declarationsGauche {
+
+}
+#declarations .declarationsGauche p {
+    color:var(--texteGris);
+    font-size:1.8rem;
+    margin-top:3rem;
+}
+#declarations .declarationsGauche a {
+    color:var(--orange);
+    font-weight:600;
+    font-size:1.8rem;
+    margin-top:3rem;
+    display:block;
+}
+#declarations .declarationsGauche .incidents {
+    border:1px solid #d5d5d5;
+    max-width:360px;
+    padding:2.5rem 1.5rem;
+    margin-top:4rem;
+}
+#declarations .declarationsGauche .incidents div {
+    color:var(--texteGris);
+    font-size:1.8rem;
+    font-weight:600;
+}
+#declarations .declarationsGauche .incidents span {
+    color:#000;
+    font-size:4.8rem;
+    font-weight:600;
+}
+
+#declarations .declarationsDroite {
+    position:relative;
+}
+#declarations .declarationsDroite img {
+    position:relative;
+    z-index:50;
+}
+#declarations .declarationsDroite .carre1 {
+    right: 5%;
+    top: -12%;
+    z-index:1;
+}
+#declarations .declarationsDroite .carre2 {
+    left: 14%;
+    bottom: -8%;
+    z-index:60;
+}
+#declarations .declarationsDroite .carre3 {
+    right: 0;
+    bottom: 25%;
+    z-index:60;
+}
+#declarations .declarationsDroite .carre4 {
+    left: 32%;
+    top: -17%;
+    z-index:60;
+}
+
+/* ASSURANCE */
+#assurance {
+    background-image:url(../maquette/img4.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 15rem 10rem;
+}
+#assurance h2 {
+    color:var(--blanc);
+    margin-bottom:.5rem;
+}
+#assurance p {
+    font-size:1.8rem;
+    color:var(--blanc);
+    margin-bottom:5rem;
+}
+#assurance a {
+    border:2px solid var(--orange);
+    background-color:var(--orange);
+    color:var(--blanc);
+    padding:1rem 2.5rem;
+    font-weight:bold;
+}
+
+/* footer */
+footer {
+    margin:10rem;
+}
+footer .titreMenu {
+    font-size:1.8rem;
+    font-weight:bold;
+}
+footer ul li {
+    margin-bottom:.5rem;
+}
+footer ul li a {
+    color:var(--texteGris);
+    font-size:1.5rem;
+}
+footer .siteName .titre {
+    font-size:2.4rem;
+    font-weight:bold;
+}
+footer .siteName p {
+    font-size:1.8rem;
+    color:var(--texteGris);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width:576px) {
+    h1 {
+        font-size:4rem;
+    }
+    h2 {
+        font-size:3.5rem;
+    }
+    .heroGauche {
+        padding: 0px 15px 0px 15px;
+    }
+    .heroGauche input[type="number"] {
+        height:44px;
+        width:135px;
+    }
+    .heroDroite, .devisGauche, .declarationsDroite  {
+        padding:0;
+    }
+    #assurance {
+        padding: 10rem 5rem;
+    }
+    #assurance a {
+        font-size:1.5rem;
+    }
+    footer {
+        margin:5rem;
+    }
+    #declarations, #reassurance {
+        margin-top:5rem;
+        margin-bottom:5rem;
+    }
+    #reassurance {
+        padding-top:0;
+        padding-bottom:0;
+    }
+}
