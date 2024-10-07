@@ -38,7 +38,7 @@ Pour trouver les ticket crée, il faut appuyer sur le bouton "*Tickets*" dans la
 
 Dans le menu de gestion d'un tickets nous pouvons voir son nom, son statuts, qui est quand l'a crée ainsi ça description. Nous avons aussi la possibilité de diviser le ticket en parties plus petites appelé "éléments enfant", relier les tickets entre eux pour mettre en évidence leur relation, voir la fil d'activité et laisser un commentaire.
 
-!['Documentation GitLab (](C:\Users\bekka\OneDrive\Bureau\'Documentation GitLab (#1) · Tickets · Magomed _ CciRAN · GitLab' - gitlab.png)
+![Capture d'écran 1](Documentation utilisateur GitLab.assets/Ce 1.png)
 
 ------
 
@@ -54,7 +54,7 @@ Dans la fenêtre de gestion d'un jalon, nous pouvons voir le titre, la descripti
 
 
 
-![image-20240925181556768](C:\Users\bekka\AppData\Roaming\Typora\typora-user-images\image-20240925181556768.png)
+![Capture d'écran 2](Documentation utilisateur GitLab.assets/image-20240925181556768.png)
 
 ------
 
@@ -66,7 +66,7 @@ Un **tableau Kanban** sur GitLab est un outil visuel de gestion de projet qui pe
 
 
 
-![image-20240925183012213](C:\Users\bekka\AppData\Roaming\Typora\typora-user-images\image-20240925183012213.png)
+![Capture d'écran 3](Documentation utilisateur GitLab.assets/image-20240925183012213.png)
 
 
 
