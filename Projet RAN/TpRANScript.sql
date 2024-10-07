@@ -4,7 +4,7 @@ USE tpRAN;
 
 CREATE TABLE Adherents(
    numAdherent INT NOT NULL AUTO_INCREMENT,
-   nom VARCHAR(40) NOT NULL,
+   nom VARCHAR(50) NOT NULL,
    rue VARCHAR(50) NOT NULL,
    ville VARCHAR(50) NOT NULL,
    codePostal VARCHAR(5) NOT NULL,
