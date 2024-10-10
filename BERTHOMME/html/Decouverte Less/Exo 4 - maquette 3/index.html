@@ -4,100 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/decef442eb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet/less" href="style.less">
     <title>Document</title>
 </head>
 <body>
-    <!-- Header -->
-    <header class="bg-dark text-white p-3 text-center">
-        <h1>Agency</h1>
-        <nav>
-            <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link text-white" href="#">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">A Propos</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">L'Equipe</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Services</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">References</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Main content section -->
-    <section class="container mt-5">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Lorem Ipsum Dolor</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#" class="btn btn-primary">En savoir plus</a>
+    <section id="hero" class="container-fluid">
+        <header class="container">
+            <!-- NAVBAR -->
+        </header>
+        <!-- HEADER -->
+        <header class="container">
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-lg ">
+                <img src="images/logo.png" alt="logo" class="img-fluid" style="max-width: 150px;">
+                <div class="actions">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">L'equipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- FIN HEADER -->
+        
+        <section id="intro" class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h1>Des idées de génie pour les professionnels</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, cume.</p>
+                    <a href="#">En savoir plus</a>
+                </div>
             </div>
-            <div class="col-md-6">
-                <img src="https://via.placeholder.com/500" class="img-fluid" alt="Agency Image">
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="container mt-5">
-        <h2 class="text-center">L'équipe qui déchire</h2>
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <img src="https://via.placeholder.com/150" class="rounded-circle" alt="Jane Ifer">
-                <h3>Jane Ifer</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <img src="https://via.placeholder.com/150" class="rounded-circle" alt="Jean Registre">
-                <h3>Jean Registre</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="container mt-5">
-        <h2 class="text-center">Nos Prestations</h2>
-        <div class="row">
-            <div class="col-md-3 text-center">
-                <h4>Prestation 1</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="col-md-3 text-center">
-                <h4>Prestation 2</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="col-md-3 text-center">
-                <h4>Prestation 3</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="col-md-3 text-center">
-                <h4>Prestation 4</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="container mt-5">
-        <h2 class="text-center">Nous Contacter</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <h3>Adresse</h3>
-                <p>20 rue du jambon, 68000 Baguee</p>
-                <p>Téléphone: 01 23 45 67 89 / 06 06 06 06 06</p>
-            </div>
-            <div class="col-md-6">
-                <h3>Email</h3>
-                <p>Jane@ifer.com</p>
-                <p>Jean@registre.fr</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white p-3 text-center">
-        <p>&copy; 2022 On déchire tout company tavu.</p>
-    </footer>
-</body>
+        </section>
+    </body>
 <script src="https://cdn.jsdelivr.net/npm/less" ></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
