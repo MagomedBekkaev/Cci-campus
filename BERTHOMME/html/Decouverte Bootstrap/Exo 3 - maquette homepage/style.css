@@ -1,8 +1,9 @@
 :root {
     --rouge: #e84545; 
+    --rougeHover: #a52d2d;
     --bleu1: #2b2e4a;
     --violet: #53354a;
-    --blue2: #3a3e64;
+    --blue2: rgb(58, 62, 100);
     --blueFonce: #313454;
     --openSans: "Open Sans", sans-serif;
     --raleway: "Raleway", sans-serif;
@@ -27,12 +28,12 @@ i {
 }
 
 .container-fluid {
-    background-image: url('images/bg-header2.jpg');
-    background-image: ta;
+    position: relative;
+    background-image: url('images/bg-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
+    margin-bottom: 40px;
 }
 
 .container-fluid {
@@ -56,4 +57,24 @@ header, #bandeauHero   {
 
 .navbar-light bg-light {
     background-color: var(--bleu1);
+}
+
+
+a.btn1{
+    background-color: var(--rouge);
+    color: #FFFFFF;
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+
+a.btn1:hover {
+    background-color: var(--rougeHover);
+}
+
+.navbar-toggler.collapsed, .navbar-toggler {
+    background-color: var(--rouge);
+    border: none;
 }
