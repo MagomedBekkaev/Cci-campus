@@ -1,6 +1,6 @@
-@principal: #fba419;
-@secondaire: white;
-@troisieme: #161616;
+@orange: #fba419;
+@blanc: white;
+@noir: #161616;
 @lato: 'Lato', sans-serif;
 
 * {
@@ -14,8 +14,38 @@ body {
 }
 
 h1 {
-    font-size: 36px;
-    color: @secondaire;
+    font-size: 32px;
+    font-weight: bold;
+    color: @blanc;
+}
+
+p {
+    font-size: 18px;
+    color: @blanc;
+}
+
+span {
+    color: @orange;
+}
+
+a.nav-link, .actions {
+    color: @blanc;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.actions i {
+    margin-left: 20px ;
+}
+
+a {
+    color: @blanc;
+    background-color: @orange;
+    padding: 8px;
+    border-radius: 15px;
+    text-decoration: none;
+
 }
 
 .container-fluid {
