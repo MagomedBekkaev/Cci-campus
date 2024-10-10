@@ -22,8 +22,12 @@ p, a, div, ul, li {
     box-sizing: border-box;
 }
 
+i {
+    color: var(--rouge);
+}
+
 .container-fluid {
-    background-image: url('images/projet4.jpg');
+    background-image: url('images/bg-header2.jpg');
     background-image: ta;
     background-size: cover;
     background-position: center;
