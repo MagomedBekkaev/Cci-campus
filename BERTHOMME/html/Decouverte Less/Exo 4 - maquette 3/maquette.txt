@@ -1,0 +1,11 @@
+POLICES :
+--------------
+Titre : Lato
+Texte : Lato
+
+H1 : 64px
+H2 : 54px
+
+couleur 1 : #fba419;
+couleur 2 : blanc;
+couleur 3 : #161616;

@@ -1,0 +1,46 @@
+ @couleur: #FF0000;
+ @vert: green;
+ @size: 2rem;
+
+ div {
+    font-size: @size;
+    color: @couleur;
+    background-color: aqua;
+ }
+
+ div {
+    // .mixSection();
+    p {
+        color:@vert;
+        &:hover {
+            color:@couleur;
+        }
+    }
+ }
+
+//  namespace
+#package {
+    .bouton {
+        color: @couleur;
+        background-color: @vert;
+    }
+    .formulaire {
+        background-color: yellow;
+        font-size: @size;
+    }
+}
+
+// appel au namespace
+section {
+    #package.bouton();
+}
+
+// map
+#couleurs() {
+    principal: red;
+    secondaire: blue;
+}
+
+article {
+    color:#couleurs[principal];
+}
