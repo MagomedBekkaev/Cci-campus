@@ -38,7 +38,7 @@ Pour trouver les ticket crée, il faut appuyer sur le bouton "*Tickets*" dans la
 
 Dans le menu de gestion d'un tickets nous pouvons voir son nom, son statuts, qui est quand l'a crée ainsi ça description. Nous avons aussi la possibilité de diviser le ticket en parties plus petites appelé "éléments enfant", relier les tickets entre eux pour mettre en évidence leur relation, voir la fil d'activité et laisser un commentaire.
 
-![Capture d'écran 1](Documentation utilisateur GitLab.assets/Ce 1.png)
+![Capture d'écran 1](Documentation utilisateur GitLab.assets/Capture1.png)
 
 ------
 
