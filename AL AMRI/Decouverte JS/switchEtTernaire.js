@@ -1,7 +1,7 @@
 // Exercice 1
-// const num = prompt("Saisir un nombre");
-// const message = (num % 2 === 0) ? "Nombre pair" : "Nombre impair";
-// console.log(message);
+const num = prompt("Saisir un nombre");
+const message = (num % 2 === 0) ? "Nombre pair" : "Nombre impair";
+console.log(message);
 
 // Exercice 2
 const operation = prompt("Choisir quel opération à effectuer (+, -, /, *, % ou **)");
