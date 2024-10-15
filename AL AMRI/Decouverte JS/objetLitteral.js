@@ -80,11 +80,20 @@ const taches =[
     {id: 3, nom: "Projet RAN", description: "Faire l'appli web pour le projet CDA RAN", termine: 0}
 ]
 
+function trouverTacheParId(message = "Entrez l'ID de la tâche:") {
+    const id = parseInt(prompt(message));
+    const tache = taches.find(tache => tache.id === id);
+    if (tache) {
+        return tache;
+    } else {
+        console.log("Aucune tâche trouvée avec cet ID.");
+        return null;
+    }
+}
 
 function afficherListe() {
     console.log(taches);
 }
-
 
 function creerTache() {
     const id = taches.length ? taches[taches.length - 1].id + 1 : 1;
@@ -97,78 +106,54 @@ function creerTache() {
     console.log("Nouvelle tâche créée:", nouvelleTache);
 }
 
-// function trouverId() {
-//     const id = parseInt(prompt("Entrez l'ID de la tâche:"));
-//     const index = taches.findIndex(tache => tache.id === id);
-// }
-
 function modifierTache() {
-    const id = parseInt(prompt("Entrez l'ID de la tâche à modifier:"));
-    const tache = taches.find(tache => tache.id === id);
+    const tache = trouverTacheParId("Entrez l'ID de la tâche à modifier:");
     if (tache) {
         const nom = prompt("Entrez le nouveau nom de la tâche:");
         const description = prompt("Entrez la nouvelle description de la tâche:");
         tache.nom = nom;
         tache.description = description;
         console.log("Tâche modifiée:", tache);
-    } else {
-        console.log("Aucune tâche trouvée avec cet ID.");
     }
 }
-
 
 function supprimerTache() {
-    const id = parseInt(prompt("Entrez l'ID de la tâche à supprimer:"));
-    const index = taches.findIndex(tache => tache.id === id);
-    
-    if (index !== -1) {
+    const tache = trouverTacheParId("Entrez l'ID de la tâche à supprimer:");
+    if (tache) {
+        const index = taches.indexOf(tache);
         taches.splice(index, 1);
-        console.log(`La tâche avec l'ID ${id} a été supprimée.`);
+        console.log(`La tâche avec l'ID ${tache.id} a été supprimée.`);
         console.log(taches);
-    } else {
-        console.log("Aucune tâche trouvée avec cet ID.");
     }
 }
-
 
 function tacheTerminee() {
-    const id = parseInt(prompt("Entrez l'ID de la tâche à marquer comme terminée:"));
-    const index = taches.findIndex(tache => tache.id === id);
-
-    if (index !== -1) {
-        taches[index].termine = 1;
-        console.log(`La tâche avec l'ID ${id} est maintenant marquée comme terminée.`);
-    } else {
-        console.log("Aucune tâche trouvée avec cet ID.");
+    const tache = trouverTacheParId("Entrez l'ID de la tâche à marquer comme terminée:");
+    if (tache) {
+        tache.termine = 1;
+        console.log(`La tâche avec l'ID ${tache.id} est maintenant marquée comme terminée.`);
     }
 }
 
-
 function afficherTacheSpecifique() {
-    const id = parseInt(prompt("Entrez l'ID de la tâche specifique à afficher:"));
-    const index = taches.findIndex(tache => tache.id === id);
-    console.log(taches[index]);
+    const tache = trouverTacheParId("Entrez l'ID de la tâche spécifique à afficher:");
+    if (tache) {
+        console.log(tache);
+    }
 }
 
-
 function dupliquerTache() {
-    const id = parseInt(prompt("Entrez l'ID de la tâche à dupliquer:"));
-    const index = taches.findIndex(tache => tache.id === id);
-
-    if (index !== -1) {
-        const tacheOriginale = taches[index];
+    const tache = trouverTacheParId("Entrez l'ID de la tâche à dupliquer:");
+    if (tache) {
         const nouvelleTache = {
-            ...tacheOriginale,
+            ...tache,
             id: taches[taches.length - 1].id + 1
         };
         taches.push(nouvelleTache);
         console.log("Tâche dupliquée avec succès:", nouvelleTache);
         console.log("Liste des tâches mise à jour:", taches);
-    } else {
-        console.log("Aucune tâche trouvée avec cet ID.");
     }
 }
-
 
 function afficherNbreTacheComplete() {
     const tachesCompletees = taches.filter(tache => tache.termine === 1);
@@ -179,7 +164,6 @@ function afficherNbreTacheAFaire() {
     const tachesaFaire = taches.filter(tache => tache.termine === 0);
     console.log("Nombre de tâches à faire:", tachesaFaire.length);
 }
-
 
 function afficherMenu() {
     let action;
@@ -224,5 +208,4 @@ function afficherMenu() {
         }
     }
 }
-
 afficherMenu();
