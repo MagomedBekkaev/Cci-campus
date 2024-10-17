@@ -107,3 +107,19 @@ function ajouterElement($listeCourses, $nouvelElement) {
 $listeCourses = ajouterElement($listeCourses, "Beurre");
 $listeCourses = ajouterElement($listeCourses, "Lait");
 afficherCourses($listeCourses);
+
+echo "<br>";
+function supprimerElement($listeCourses, $elementASupprimer) {
+    if (in_array($elementASupprimer, $listeCourses)) {
+        $index = array_search($elementASupprimer, $listeCourses);
+        unset($listeCourses[$index]);
+        echo "L'élément '$elementASupprimer' a été supprimé de la liste.<br>";
+    } else {
+        echo "L'élément '$elementASupprimer' n'a pas été trouvé dans la liste.<br>";
+    }
+    return $listeCourses;
+}
+
+$listeCourses = supprimerElement($listeCourses, "Lait");
+$listeCourses = supprimerElement($listeCourses, "Chocolat");
+afficherCourses($listeCourses);
