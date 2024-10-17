@@ -86,6 +86,24 @@
 // Exercice 9 // Liste de course 
 
 $listeCourses = ["Pain", "Lait", "Oeufs", "Papie toillete"];
-foreach ($listeCourses as $course) {
-    echo $course . "<br>";
+function afficherCourses($listeCourses) {
+    foreach ($listeCourses as $course) {
+        echo "$course<br>";
+    }
 }
+
+afficherCourses($listeCourses);
+
+function ajouterElement($listeCourses, $nouvelElement) {
+    if (in_array($nouvelElement, $listeCourses)) {
+        echo "L'élément '$nouvelElement' est déjà présent dans la liste.<br>";
+    } else {
+        $listeCourses[] = $nouvelElement;
+        echo "L'élément '$nouvelElement' a été ajouté à la liste.<br>";
+    }
+    return $listeCourses;
+}
+
+$listeCourses = ajouterElement($listeCourses, "Beurre");
+$listeCourses = ajouterElement($listeCourses, "Lait");
+afficherCourses($listeCourses);
