@@ -1,0 +1,43 @@
+Exercice 5.2: Ecrire un algorithme qui demande un nombre à l’utilisateur, puis qui affiche un message indiquant si ce nombre est pair ou impair.
+Debut
+Variables:
+nombre en entier
+
+nombre = 0
+
+nombre = lire "Entrez un nombre : "
+if (nombre%2 == 0) {
+    afficher "Ce nombre est pair"
+} else {
+    afficher "Ce nombre est impair"
+}
+
+///////////////EXERCICE 5.4 Écrire un algorithme qui demande un mot à l’utilisateur, 
+                            puis affiche à l’écran le nombre de lettres de ce mot.
+
+DEBUT
+VARIABLES
+mot en chaine 
+
+mot = LIRE("Entrer un mot")
+AFFICHER("Le nombre de letrre dans {mot} est de: " mot.lenght)
+FIN
+
+///////////////EXERCICE 5.4 Écrire un algorithme qui demande une phrase à l’utilisateur, 
+                            puis demande le rang d'un caractère à supprimer. Le programme supprime ensuite le caractère souhaité 
+                            dans la variable qui stocke la phrase, puis affiche la nouvelle phrase à l'écran.
+
+DEBUT
+VARIABLES
+phrase en chaine 
+phrase = LIRE("Entrer une phrase")
+rang = LIRE("Entrer le rang du caractère à supprimer")
+
+// Vérifier que le rang est valide
+SI (rang > 0 et rang <= phrase.length) {
+    phrase = phrase.substring(0, rang - 1) + phrase.substring(rang)
+    AFFICHER("La nouvelle phrase est: " + phrase)
+} else {
+    AFFICHER("Rang invalide")
+}
+FIN
