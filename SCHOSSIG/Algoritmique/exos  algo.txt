@@ -29,15 +29,20 @@ FIN
 
 DEBUT
 VARIABLES
-phrase en chaine 
+    phrase en chaine 
+    rang en entier
+
+// Lire la phrase et le rang du caractère à supprimer
 phrase = LIRE("Entrer une phrase")
 rang = LIRE("Entrer le rang du caractère à supprimer")
 
 // Vérifier que le rang est valide
-SI (rang > 0 et rang <= phrase.length) {
-    phrase = phrase.substring(0, rang - 1) + phrase.substring(rang)
+SI (rang > 0 et rang <= longueur(phrase)) ALORS
+    phrase = sous_chaine(phrase, 0, rang - 1) + sous_chaine(phrase, rang)
     AFFICHER("La nouvelle phrase est: " + phrase)
-} else {
+SINON
     AFFICHER("Rang invalide")
-}
+FIN SI
+
 FIN
+
