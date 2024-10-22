@@ -38,7 +38,7 @@ rang = LIRE("Entrer le rang du caractère à supprimer")
 
 // Vérifier que le rang est valide
 SI (rang > 0 et rang <= longueur(phrase)) ALORS
-    phrase = sous_chaine(phrase, 0, rang - 1) + sous_chaine(phrase, rang)
+    phrase = Left(phrase, rang -1) & Right(phrase, Len(phrase) - rang)
     AFFICHER("La nouvelle phrase est: " + phrase)
 SINON
     AFFICHER("Rang invalide")
@@ -46,3 +46,55 @@ FIN SI
 
 FIN
 
+
+///////////////EXERCICE 5.6 Écrire un algorithme qui demande une phrase à l’utilisateur, 
+                            puis affiche à l’écran le nombre de mots de cette phrase.
+
+DEBUT
+VARIABLES
+    phrase en chaine 
+    nombreMots en entier
+
+// Lire la phrase
+phrase = LIRE("Entrer une phrase")
+
+// Compter le nombre de mots
+Repeter len(phrase) > len(phrase - 1) = VRAI{
+    nombreMots = Right(phrase, 0)
+    nombreMots++;
+}
+
+// Afficher le nombre de mots
+AFFICHER("Le nombre de mots dans la phrase est: " + nombreMots)
+
+FIN
+
+
+///////////////EXERCICE 5.7 Écrire un algorithme qui demande une phrase à l’utilisateur, 
+                            puis affiche à l’écran le nombre de voyelles contenues dans cette phrase.
+
+DEBUT
+VARIABLES
+    phrase en chaine 
+    nombreVoyelles en entier
+    voyelles en tableau
+    i en entier
+
+// Initialiser les variables
+nombreVoyelles = 0
+voyelles = "aeiouAEIOU"
+
+// Lire la phrase
+phrase = LIRE("Entrer une phrase")
+
+// Parcourir chaque caractère de la phrase
+POUR i DE 1 A longueur(phrase) FAIRE
+    POUR i DE A longeur(voyelles) FAIRE
+        Trouve(phrase, voyelles) = nombreVoyelles +1
+    FIN POUR 
+FIN POUR
+
+// Afficher le nombre de voyelles
+AFFICHER("Le nombre de voyelles dans la phrase est: " + nombreVoyelles)
+
+FIN
