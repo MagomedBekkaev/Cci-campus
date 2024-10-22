@@ -48,6 +48,7 @@ FinFonction
 
 
 EXRCICE 6.4
+
 Fonction Trouve(chaine1 en Chaîne, chaine2 en Chaîne) en Numérique
 Variables
     longueurChaine1, longueurChaine2, i en Numérique
@@ -69,14 +70,16 @@ Début
 FinFonction
 
 
-
+Exercice 6.5
 Variables
     phrase en Chaîne
+    caractereASuppr
     rangSuppr en Entiers
 Début
+fonction supprCaractere (phrase, caractereASuppr) 
     phrase ← Lire("Entrez une phrase : ")
-    rangSuppr ← Lire("Entrez le rang du caractère à supprimer : ")
-    phrase ← Mid(phrase, 1, rangSuppr - 1)
-    			& Mid(phrase, rangSuppr + 1, Len(phrase) - rangSuppr)
+    caractereASuppr ← Lire("Entrez le caractère à supprimer : ")
+    phrase ← Mid(phrase, 1, caractereASuppr - 1)
+    			& Mid(phrase, caractereASuppr + 1, Len(phrase) - caractereASuppr)
     Écrire "La nouvelle phrase est : « ", phrase, " »."
 Fin
