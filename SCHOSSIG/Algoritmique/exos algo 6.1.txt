@@ -73,13 +73,31 @@ FinFonction
 Exercice 6.5
 Variables
     phrase en Chaîne
-    caractereASuppr
+    caractereASuppr en chaine
     rangSuppr en Entiers
 Début
 fonction supprCaractere (phrase, caractereASuppr) 
-    phrase ← Lire("Entrez une phrase : ")
-    caractereASuppr ← Lire("Entrez le caractère à supprimer : ")
-    phrase ← Mid(phrase, 1, caractereASuppr - 1)
+    phrase = Lire("Entrez une phrase : ")
+    caractereASuppr = Lire("Entrez le caractère à supprimer : ")
+    phrase = Mid(phrase, 1, caractereASuppr - 1)
     			& Mid(phrase, caractereASuppr + 1, Len(phrase) - caractereASuppr)
     Écrire "La nouvelle phrase est : « ", phrase, " »."
 Fin
+
+
+EXERCICE 6.6
+Fonction SupprCaractereMulti(chaine en Chaîne, caracteresASuppr en Chaîne) en Chaîne
+Variables
+    i en Numérique
+    nouvelleChaine en Chaîne
+Début
+    nouvelleChaine ← ""
+    
+    Pour i = 1 à Len(chaine) Faire
+        Si Trouve(caracteresASuppr, Mid(chaine, i, 1)) = 0 Alors
+            nouvelleChaine = nouvelleChaine & Mid(chaine, i, 1)
+        FinSi
+    FinPour
+    
+    Renvoyer nouvelleChaine
+FinFonction
