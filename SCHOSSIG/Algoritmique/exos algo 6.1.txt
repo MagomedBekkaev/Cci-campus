@@ -1,0 +1,80 @@
+EXERCICE 6.1
+Debut
+Variables
+    nombre, somme en entier
+
+Debut function
+fonctionCalculerSomme(nombre)
+    Pour (i = 0, i < 5, i++ ) FAIRE
+        somme = 0
+        nombre = Lire("Entrer un nombre)
+        somme = somme + nombre
+        Renvoyer somme
+    Fin Pour
+FinFonction
+Fin
+
+
+EXERCICE 6.2
+Debut
+Variables
+    contenu1, contenu2, contenuTemp en chaine
+
+Debut fonction
+fonction echangerContenu (contenu1, contenu2) 
+    contenuTemp = contenu1
+    contenu1 = contenu2;
+    contenu2 = contenuTemp;
+FinFonction
+Fin
+
+EXERCICE 6.3
+Debut
+Fonction CompterVoyelles(chaine en Chaîne) en Numérique
+Variables
+    voyelles, i, compteur en Numérique
+Début
+    voyelles = "aeiouyAEIOUY"
+    compteur = 0
+    
+    Pour i = 1 à Len(chaine) Faire
+        Si Trouve(voyelles, Mid(chaine, i, 1)) > 0 Alors
+            compteur = compteur + 1
+        FinSi
+    FinPour
+    
+    Renvoyer compteur
+FinFonction
+
+
+EXRCICE 6.4
+Fonction Trouve(chaine1 en Chaîne, chaine2 en Chaîne) en Numérique
+Variables
+    longueurChaine1, longueurChaine2, i en Numérique
+Début
+    longueurChaine1 = Len(chaine1)
+    longueurChaine2 = Len(chaine2)
+    
+    Si longueurChaine2 = 0 Alors
+        Renvoyer 0
+    FinSi
+    
+    Pour i = 1 à longueurChaine1 - longueurChaine2 + 1 Faire
+        Si Mid(chaine1, i, longueurChaine2) = chaine2 Alors
+            Renvoyer i
+        FinSi
+    FinPour
+    
+    Renvoyer 0
+FinFonction
+
+Variables
+    phrase en Chaîne
+    rangSuppr en Entiers
+Début
+    phrase ← Lire("Entrez une phrase : ")
+    rangSuppr ← Lire("Entrez le rang du caractère à supprimer : ")
+    phrase ← Mid(phrase, 1, rangSuppr - 1)
+    			& Mid(phrase, rangSuppr + 1, Len(phrase) - rangSuppr)
+    Écrire "La nouvelle phrase est : « ", phrase, " »."
+Fin
