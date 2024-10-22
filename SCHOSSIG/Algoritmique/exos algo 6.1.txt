@@ -74,7 +74,6 @@ Exercice 6.5
 Variables
     phrase en Chaîne
     caractereASuppr en chaine
-    rangSuppr en Entiers
 Début
 fonction supprCaractere (phrase, caractereASuppr) 
     phrase = Lire("Entrez une phrase : ")
@@ -101,3 +100,10 @@ Début
     
     Renvoyer nouvelleChaine
 FinFonction
+
+Exercice 6.7
+Variables
+    phrase en chaine
+    chaineASuppr en chaine
+Debut
+fonction supprimerChaine (phrase, chaineASuppr)
