@@ -68,6 +68,8 @@ Début
     Renvoyer 0
 FinFonction
 
+
+
 Variables
     phrase en Chaîne
     rangSuppr en Entiers
