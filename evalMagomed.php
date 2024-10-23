@@ -1,4 +1,4 @@
-pw<?php
+<?php
 // Ceci est un commentaire, n'est pas une ligne de code
 // Exercice 1
 $nom = "Magomed";
@@ -59,6 +59,9 @@ $produits = [
     "Orange" => 1.75,
 ];
 
+echo '<pre>';
+print_r($produits);
+echo '</pre>';
 // Parcourir le tableu avec une boucle foreach, récuperer chaque élements du tableau et les afficher sur écran
 foreach ($produits as $produit => $value) {
     echo "Produit: $produit, Prix: $value <br>";
@@ -68,6 +71,10 @@ echo "<br>";
 // Exercice 5
 
 $nombres = [3, 10, 7, 15, 2];
+
+if (in_array(3, $nombres)) {
+    echo "In array marche";
+};
 
 // Parcourir chque élement du tableu et les multitpier par eux meme pour avoir un nombre carré.
 foreach ($nombres as $nombre) {
