@@ -101,9 +101,21 @@ Début
     Renvoyer nouvelleChaine
 FinFonction
 
+
+
 Exercice 6.7
+Fonction SupprimerChaine(phrase en Chaîne, chaineASuppr en Chaîne) en Chaîne
 Variables
-    phrase en chaine
-    chaineASuppr en chaine
-Debut
-fonction supprimerChaine (phrase, chaineASuppr)
+    pos en Numérique
+Début
+    pos = Trouve(phrase, chaineASuppr)
+    
+    TantQue pos > 0 Faire
+        phrase = Left(phrase, pos - 1) & Right(phrase, Len(phrase) - pos - Len(chaineASuppr))
+        pos = Trouve(phrase, chaineASuppr)
+    FinTantQue
+    
+    Renvoyer phrase
+FinFonction
+
+Bonjour tout le monde, monde
