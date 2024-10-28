@@ -1,0 +1,34 @@
+Variable
+     ligneLue en Chaîne
+     canalFichier en Canal
+ Début
+     canalFichier ← Ouvrir("Exemple.txt") en Lecture
+     TantQue NON EOF(canalFichier)
+         ligneLue ← LireFichier(canalFichier)
+         Écrire ligneLue
+     FinTantQue
+     Fermer(canalFichier)
+ Fin
+
+
+EXERCICE 7.3
+Variables
+    cmpt en Entier
+    canalFichier en Canal
+Début
+    canalFichier = Ouvrir("Carnet.txt") en Ajout
+
+    fonction ajouterIndividu (nom, prénom, téléphone, adresseElec en Chaînes) FAIRE
+        nom = Lire("Entrer le nom")
+        prénom = Lire("Entrer le prénom")
+        téléphone = Lire("Entrer le numéro de telephone")
+        adresseElec = Lire("Entrer l'adresse électronique")
+        ligneAjout = RPAD(nom, 20)
+            & RPAD(prénom, 15)
+            & RPAD(téléphone, 10)
+            & RPAD(adresseElec, 20)
+
+    ÉcrireFichier(canalFichier, ligneAjout)
+    Fermer(canalFichier)
+Fin
+
