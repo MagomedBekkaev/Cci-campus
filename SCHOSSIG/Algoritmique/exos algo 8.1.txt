@@ -1,0 +1,39 @@
+
+//Exercice 8.2
+Tri à sélection:
+Variable:
+    nbreValeurs, cmptDepart, cmptValeur, valTemp en entiers
+    tabNbres[] en tableau d'entiers
+Debut
+    Pour cmptDepar = 0 à nbreValeurs - 2
+        posMaxi = cmptDepart
+            Pour cmptValeur = cmptDepart + 1 à nbreValeurs - 1
+                Si tabNbres[cmptValeur] > tabNombres[posMaxi] alors
+                    posMaxi = cmptValeur
+                FinSi
+            FinPour
+        valTemp = tabNbre[posMaxi]
+        tabNbres[posMaxi] = tabNbres[cmptDepart]
+        tabNbres[cmptDepart] = valTemp
+    FinPour
+Fin
+
+Tri à bulles:
+Varaibles:
+    nbreValeurs, cmptValeur, valTemp en entiers
+    tabNbres[] en Tableau d'entiers
+    yaPermutation en Booleen
+Début
+    yaPermutation = VRAI 
+    TantQue yaPermutation
+        yaPermutation = FAUX
+        Pour cmpt = 0 à nbreValeurs - 2
+            Si tabNbres[cmpt] < tabNbres[cmpt + 1] alors
+                valTemp = tabNbres[cmpt]
+                tabNombres = tabNombres[cmpt + 1]
+                tabNbres[cmpt +1] = valTemp
+                yaPermutation = VRAI
+            FinSi 
+        cmpt suivant
+    FinTantQue
+Fin
