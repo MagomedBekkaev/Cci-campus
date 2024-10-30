@@ -1,0 +1,24 @@
+/* Class for input fields while typing */
+.typing {
+    color: blue;
+}
+
+/* Background color for France selection */
+.select-france {
+    background-color: lightblue;
+}
+
+/* Background color for Germany selection */
+.select-germany {
+    background-color: lightgreen;
+}
+
+/* Background color for Spain selection */
+.select-spain {
+    background-color: lightcoral;
+}
+
+/* Class for error messages */
+.error {
+    color: red;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form id="contactForm" method="post">
+        <!-- Name input field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <span id="nameError" class="error"></span><br>
+        
+        <!-- Email input field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <span id="emailError" class="error"></span><br>
+        
+        <!-- Message textarea -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea><br>
+        <span id="messageError" class="error"></span><br>
+        
+        <!-- Country selection dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="">Select a country</option>
+            <option value="france">France</option>
+            <option value="germany">Germany</option>
+            <option value="spain">Spain</option>
+        </select><br>
+        <span id="countryError" class="error"></span><br>
+        
+        <!-- Submit and validate buttons -->
+        <button type="submit">Submit</button>
+        <button type="button" id="validateButton">Valider</button>
+        <span id="subscribeError" class="error"></span><br>
+    </form>
+
+    <!-- Success message paragraph -->
+    <p id="successMessage" class="success"></p> 
+</body>
+</html>
