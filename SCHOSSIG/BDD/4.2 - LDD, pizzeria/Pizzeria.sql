@@ -38,7 +38,8 @@ INSERT INTO Ingredients (idIngredient, nomIngredient, prixUnitaireIngredient, sy
     (13, 'Olives noires', 7.35, 'eukg'),
     (14, 'Jambon', 2, 'eukg'),
     (15, 'Ananas', 1, 'eukg'),
-    (16, 'Olives vertes', 6.20, 'eukg');
+    (16, 'Olives vertes', 6.20, 'eukg'),
+    (17, 'Olives jaunes', 6.20, 'eukg');
 --
 -- ---------------------------------------------------------------------------------------
 -- Structure de la table Unites
@@ -98,7 +99,9 @@ INSERT INTO Compositions (idPizza, idIngredient, quantite) VALUES
     (4, 7, 0.14),
     (4, 10, 0.18),
     (4, 12, 0.03),
-    (4, 14, 0.12);
+    (4, 14, 0.12),
+    (5, 17, 0.12),
+    (6, 4, 0.03);
 --
 -- --------------------------------------------------------
 -- Structure de la table Pizzas
@@ -115,7 +118,9 @@ INSERT INTO Pizzas (idPizza, nomPizza, prixVentePizza) VALUES
     (1, '4 fromages', 14),
     (2, 'Royale', 12),
     (3, 'Simple', 11),
-    (4, 'Diverse', 15);
+    (4, 'Diverse', 15),
+    (5, 'Originale', 30),
+    (6, 'Super25', 8);
 --
 -- ---------------------------------------------------------------------------------------
 -- Structure de la table LignesCommande
@@ -144,7 +149,8 @@ INSERT INTO LignesCommande (idPizza, idCommande, quantite) VALUES
     (2, 9, 7),
     (2, 10, 7),
     (4, 10, 5),
-    (3, 11, 5);
+    (3, 11, 5),
+    (6, 12, 5);
 --
 -- ---------------------------------------------------------------------------------------
 -- Structure de la table Commandes
@@ -170,7 +176,8 @@ INSERT INTO Commandes (idCommande, dateCommande, heureCommande, heureLivraison, 
     (8, '2011-06-25', '12:15:15', '12:20:00', 2),
     (9, '2011-06-12', '11:15:15', '12:20:00', 2),
     (10, '2020-06-12', '11:15:15', '12:20:00', 2),
-    (11, '2020-06-12', '11:15:15', NULL, 1);
+    (11, '2020-06-12', '11:15:15', NULL, 1),
+    (12, '2020-06-13', '11:15:15', '12:20:00', 2);
 --
 -- ---------------------------------------------------------------------------------------
 -- Structure de la table Employes

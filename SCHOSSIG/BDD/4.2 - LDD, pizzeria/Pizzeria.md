@@ -106,59 +106,117 @@ Deux pizzas sont proposées, d'autres pourront être ajoutées.
 ### 2.1. SQL standard
 
 **R1** : *« Quelle est la liste des nom et prix de chaque pizza, triée par ordre de prix croissant ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R01.png" alt="Requête R01" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R2** : *« Quel est le nom des pizzas qui coûtent plus de 13€, triés par ordre décroissant du prix ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R02.png" alt="Requête R02" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R3** : *« Quelle est la liste de nom et prénom des employés qui gagnent entre 1 200 € et 1 300 € ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R03.png" alt="Requête R03" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R4** : *« Quel est l'identifiant des commandes passées courant de l’année 2011, entre 15h et 16h de l’après midi, qui n’ont pas été traitées par l’employé numéro 1 ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R04.png" alt="Requête R04" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R5** : *« Quel est le nom des ingrédients qui se terminent par la lettre « a » ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R05.png" alt="Requête R05" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R6** : *« Quelle est la liste des identifiants de pizzas qui contiennent au moins 100 g de champignons ou au moins 100 g de chorizo ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R06.png" alt="Requête R06" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R7** : *« Quelle est la liste avec nom et quantité des ingrédients de la pizza 4 fromages ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R07.png" alt="Requête R07" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R8** : *« Quels sont les noms des pizzas qui contiennent des olives ou du chorizo ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R08.png" alt="Requête R08" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R9** : *« Quel est le nom et prénom de l’employé qui a traité la commande 3 ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R09.png" alt="Requête R09" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R10** : *« Quels sont les noms des employés ayant livré les commandes du 23 juin 2011 ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R10.png" alt="Requête R10" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R11** : *« Quels sont le ou les employés qui gagnent le plus ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R11.png" alt="Requête R11" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R12** : *« Quels sont, sans doublon, les ingrédients nécessaires pour réaliser les pizzas de la commande 2 ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R12.png" alt="Requête R12" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R13** : *« Quels sont les ingrédients qui ne sont utilisés dans aucune pizza ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R13.png" alt="Requête R13" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 
 
 ### 2.2. SQL avancé
 
 **R14** : *« Quelle est la liste des commandes qui ont été livrées moins de 10 minutes après avoir été commandées ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R14.png" alt="Requête R14" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R15** : *« Quel est la liste des commandes qui ont été commandées le mois de naissance de Julien MARTIN, en précisant le nom et le prénom des livreurs qui ont livrés chacune de ces commandes ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R15.png" alt="Requête R15" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R16** : *« Quels sont les noms des pizzas qui contiennent au moins un ingrédient en commun avec la 4 fromages, sauf la pâte ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R16.png" alt="Requête R16" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R17** : *« Quelle est la listes des pizzas plus chères que la pizza royale ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R17.png" alt="Requête R17" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R18** : *« Quelle est la liste des commandes livrées cette année, en précisant le nom et le prénom des livreurs qui ont livrés chacune de ces commandes ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R18.png" alt="Requête R18" style="zoom: 67%; float: right; margin-left: 40px;" />
+
+Illustration pour l'année 2020.
+
+<div style="clear: both;"></div>
 
 **R19** : *« Donner le contenu de chaque commande, en précisant le nom de la pizza et la quantité. »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R19.png" alt="Requête R19" style="zoom: 67%; float: right; margin-left: 40px;" />
+
+<div style="clear: both;"></div>
 
 **R20** : *« Quelles sont les commandes qui ne contiennent pas de pizza 4 fromages ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R20.png" alt="Requête R20" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R21** : *« Quelles sont les pizzas qui ne contiennent pas de chorizo ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R21.png" alt="Requête R21" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R22** : *« Quelles sont les pizzas qui ne contiennent pas de chorizo et qui ont été livrées dans au moins une commande du 23 juin 2011 ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R22.png" alt="Requête R22" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R23** : *« Quels sont les employés (nom et prénom) qui ont livrés plus de 2 commandes le 23 juin 2011 entre 16h et 17h ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R23.png" alt="Requête R23" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R24** : *« Quelles sont la ou les pizzas qui contiennent le moins de chorizo, mais en contiennent, en précisant combien elles en contiennent ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R24.png" alt="Requête R24" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R25** : *« Quelles sont les pizzas ayant été livrées par le livreur de la commande 12, qui contiennent au moins autant de chorizo que la pizza Royale et qui coûtent moins de 13 € ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R25.png" alt="Requête R25" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R26** : *« Quelles sont la ou les pizzas qui contiennent le plus d’ingrédients ? »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R26.png" alt="Requête R26" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>
 
 **R27** : *« Afficher la liste des pizzas avec une 2e colonne indiquant selon la quantité de champignons le message "Plus de 100g", "Moins de 100g" ou "Aucun". »*
+<img src="../Medias/4.x/4.2-Pizzeria-requetes/R27.png" alt="Requête R27" style="zoom: 67%; float: right; margin-left: 40px;" />
+<div style="clear: both;"></div>

@@ -83,14 +83,22 @@ WHERE compositions.idIngredient IS NULL;
 -- R14 : « Quelle est la liste des commandes qui ont été livrées moins de 10 minutes après avoir été commandées ? »
 SELECT c.idCommande, TIMEDIFF(heureLivraison, heureCommande) AS diff
 FROM commandes c
-WHERE TIMEDIFF(heureLivraison, heureCommande) <= '00:10:00';
+WHERE TIMEDIFF(heureLivraison, heureCommande) < '00:10:00';
 
 -- R15 : « Quel est la liste des commandes qui ont été commandées le mois de naissance de Julien MARTIN, en précisant le nom et le prénom des livreurs qui ont livrés chacune de ces commandes ? »
-
+SELECT 
+    c.idCommande, e.nomEmploye, e.prenomEmploye
+FROM Commandes c
+JOIN Employes e ON c.idEmploye = e.idEmploye
+WHERE MONTH(c.dateCommande) = (SELECT MONTH(dateNaissance) FROM Employes WHERE nomEmploye = 'MARTIN' AND prenomEmploye = 'Julien')
 
 -- R16 : « Quels sont les noms des pizzas qui contiennent au moins un ingrédient en commun avec la 4 fromages, sauf la pâte ? »
 
+
 -- R17 : « Quelle est la listes des pizzas plus chères que la pizza royale ? »
+SELECT p.nomPizza
+FROM Pizzas p
+WHERE p.prixVentePizza > (SELECT prixVentePizza FROM Pizzas WHERE nomPizza LIKE "%Royale");
 
 -- R18 : « Quelle est la liste des commandes livrées cette année, en précisant le nom et le prénom des livreurs qui ont livrés chacune de ces commandes ? »
 
