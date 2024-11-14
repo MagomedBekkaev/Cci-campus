@@ -165,27 +165,99 @@ GROUP BY numeroSession;
 
 -- R1 : Quelle est la liste des inscriptions (nom, prénom, numeroSession et dateSession) triée par nom et prénom ?
 
-
+SELECT i.idInscription, a.nom, a.prenom, s.numeroSession, s.dateSession
+FROM Inscriptions i
+	INNER JOIN Agents a
+    	ON i.codeAgent = a.codeAgent
+    INNER JOIN Sessions s 
+    	ON i.numeroSession = s.numeroSession
+ORDER BY a.nom, a.prenom;
 
 -- R2 : Quelle est la liste des actions d'une durée supérieure à 60 heures ?
 
+SELECT intitule
+FROM Actions
+WHERE duree > 60;
+
 -- R3 : Quelle est la liste des dates et des lieux de sessions dont le contenu concerne les « réseaux » ?
+
+SELECT dateSession, ville
+FROM Sessions
+	INNER JOIN Actions
+			ON Sessions.codeAction = Actions.codeAction
+	INNER JOIN Lieux
+			ON Sessions.idLieuFormation = Lieux.idLieu
+WHERE intitule LIKE "%reseau%";
 
 -- R4 : Quelle est la liste des agents qui ne sont inscrits à aucune session ?
 
+SELECT DISTINCT nom, prenom
+FROM Agents
+WHERE codeAgent NOT IN ( SELECT codeAgent
+						 FROM Inscriptions );
+
 -- R5 : Quelles sont les sessions par activité (libellé de l’activité, intitulé de l'action, date de session) ?
+
+SELECT libelle, intitule, dateSession
+FROM Actions a
+	INNER JOIN Sessions s
+		ON s.codeAction = a.codeAction
+    INNER JOIN Activites
+    	ON a.codeAction = Activites.codeActivite;
 
 -- R6 : Quelle est la liste des agents déclarant des frais d'hébergement supérieurs à 1000 € ?
 
+SELECT nom, prenom 
+FROM Agents a
+	INNER JOIN Inscriptions i 
+    	ON a.codeAgent = i.codeAgent
+WHERE frais > 1000;
+
 -- R7 : Quel est le nombre de sessions qui se déroulent à Bordeaux ?
+
+SELECT COUNT(*) AS nbSessionsBordeaux
+FROM Sessions
+	INNER JOIN Lieux
+    	ON Sessions.idLieuFormation = Lieux.idLieu
+WHERE ville = "Bordeaux";
 
 -- R8 : Quelle est la liste des activités pour lesquelles le coût moyen des actions est inférieur à 3 000 € ?
 
+SELECT libelle, AVG(cout) AS coutMoyen
+FROM Actions
+	INNER JOIN Activites
+		ON Actions.codeActivite = Activites.codeActivite
+GROUP BY Activites.codeActivite
+HAVING coutMoyen < 3000;
+
 -- R9 : Quelle est la liste de intitulés d'actions qui ont des sessions pour lesquelles le coût réel est supérieur au coût prévu, en affichant cet écart ?
+
+SELECT intitule, (coutReel - coutPrevu) as coutDiff
+FROM Actions
+    INNER JOIN Sessions
+        On Sessions.codeAction = Actions.codeAction
+WHERE coutReel > coutPrevu;
 
 -- R10 : Quel est le nombre total de places, toutes sessions confondues, portant sur l'activité "informatique" ?
 
+SELECT COUNT(nombreMaxParticipant)
+FROM Sessions
+	INNER JOIN Activites
+    	ON Sessions.numeroSession = Activites.codeActivite
+WHERE libelle = "Informatique";
+
 -- R11 : Quel est le nombre total de places par action ?
+
+SELECT intitule, SUM(nombreMaxParticipant) AS PlacesParActions
+FROM Sessions
+	INNER JOIN Actions
+    	ON Sessions.codeAction = Actions.codeAction
+GROUP BY Actions.codeAction;
 
 -- R12 : Quelle est la durée moyenne des actions par activité ?
 
+SELECT libelle, AVG(duree) AS dureeMoyenne
+FROM Actions
+	INNER JOIN Activites
+		ON Actions.codeActivite = Activites.codeActivite
+		
