@@ -1,0 +1,23 @@
+R1 : Quelles sont pour chaque parcelle les productions réalisées, en précisant la quantité produite et les dates ?
+
+SELECT nomParcelle, nomProduction, dateDebut, dateFin, quantiteProduite
+FROM TypesProductions
+	INNER JOIN Productions
+    	ON TypesProductions.idProduction = Productions.idProduction
+    INNER JOIN Parcelles
+    	ON Parcelles.idParcelle = Productions.idParcelle;
+
+
+R2 : Quel est pour chaque parcelle le rendement de chaque production ?
+
+SELECT 
+    p.nomParcelle,
+    tp.nomProduction,
+    pr.quantiteProduite / p.surface AS rendement
+FROM Parcelles p
+    JOIN 
+        Productions pr ON p.idParcelle = pr.idParcelle
+    JOIN 
+        TypesProductions tp ON pr.idProduction = tp.idProduction;
+
+R3 : Quels sont les noms et quantités d'engrais épandus par parcelle et date ?
