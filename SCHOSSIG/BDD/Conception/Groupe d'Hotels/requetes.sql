@@ -4,7 +4,7 @@ SELECT
 
 **R2 :** *Quelle est la liste des hôtels avec pour chacun son nombre de chambres ?*
 
-SELECT nomHotel, 
+SELECT nomHotel, COUNT(idChambre)
 
 **R3 :** *Quelles chambres et dans quels hotels TOTO a-t-il réservé au premier trimestre de 2023 ?*
 
