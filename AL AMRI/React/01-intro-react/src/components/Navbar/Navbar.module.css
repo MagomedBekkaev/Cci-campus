@@ -1,0 +1,25 @@
+  /* Navigation */
+.navbar {
+width: 100%;
+background-color: #222;
+padding: 15px;
+text-align: center;
+}
+
+.navbar-menu {
+list-style: none;
+display: flex;
+gap: 20px;
+justify-content: center;
+}
+
+.navbar-menu a {
+color: #ffffff;
+text-decoration: none;
+font-weight: 400;
+transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+color: #ffd700;
+}

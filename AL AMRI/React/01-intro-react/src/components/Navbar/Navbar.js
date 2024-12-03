@@ -1,13 +1,16 @@
-import './Navbar.css';
+import classes from "./Navbar.module.css"
 
-export const Navbar = () => {
-    return (  
-      <nav className="navbar">
-      <ul className="navbar-menu">
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Équipe</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-      </ul>
-  </nav>
-  )}
+const Navbar = () => {  
+    return (
+      <nav className={classes.navbar}>
+        <ul className={classes["navbar-menu"]}>
+            <li><a href="#"className="navbar-link">Accueil</a></li>
+            <li><a href="#"className="navbar-link">Équipe</a></li>
+            <li><a href="#"className="navbar-link">Services</a></li>
+            <li><a href="#"className="navbar-link">Contact</a></li>
+        </ul>
+      </nav>
+    )
+  }
+
+  export default Navbar;
