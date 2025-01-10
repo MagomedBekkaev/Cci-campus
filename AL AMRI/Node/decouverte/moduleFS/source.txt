@@ -1,0 +1,1 @@
+La boucle d'événements est ce qui permet à Node.js d'effectuer des opérations d'E/S non bloquantes

@@ -1,0 +1,1 @@
+Node.js exécute le moteur JavaScript V8, le cœur de Google Chrome, en dehors du navigateur.

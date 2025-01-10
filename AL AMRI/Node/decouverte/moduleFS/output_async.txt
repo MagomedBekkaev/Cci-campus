@@ -1,0 +1,1 @@
+Une application Node.js s'exécute dans un processus unique, sans créer de nouveau thread pour chaque requête
