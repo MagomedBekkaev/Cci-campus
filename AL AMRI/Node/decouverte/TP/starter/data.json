@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "title": "Introduction à HTML/CSS pour les débutants",
+        "content": "<h2>Qu'est-ce que HTML ?</h2><p>HTML (HyperText Markup Language) est le langage de balisage standard pour créer des pages web. Il permet de structurer le contenu avec des balises comme <code>&lt;header&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;p&gt;</code>, etc.</p><p>Pour rendre vos pages web visuellement attrayantes, vous utilisez CSS (Cascading Style Sheets). CSS permet de contrôler la mise en page, les couleurs, les polices, et bien d'autres aspects visuels.</p><h3>Commencer avec HTML</h3><p>La première étape consiste à apprendre les balises de base comme <code>&lt;div&gt;</code> pour structurer les sections, <code>&lt;p&gt;</code> pour les paragraphes et <code>&lt;a&gt;</code> pour les liens. Il est aussi essentiel de comprendre comment ajouter des images avec <code>&lt;img&gt;</code> et créer des listes avec <code>&lt;ul&gt;</code> et <code>&lt;ol&gt;</code>.</p><h3>Les styles CSS</h3><p>Les styles CSS peuvent être intégrés directement dans une balise avec l'attribut <code>style</code> ou dans un fichier externe. Utilisez les sélecteurs pour cibler des éléments spécifiques, par exemple <code>p { color: blue; }</code> pour colorer tous les paragraphes en bleu.</p>",
+        "excerpt": "HTML est le langage de balisage utilisé pour structurer le contenu des pages web. Avec CSS, vous pouvez styliser vos pages et les rendre visuellement attrayantes...",
+        "image": "html-css.jpg",
+        "author": "Jean Dupont",
+        "avatar": "jean.jpg",
+        "createdAt": "2024-09-01"
+    },
+    {
+        "id": 2,
+        "title": "Les bases de JavaScript : Variables, Fonctions et Boucles",
+        "content": "<h2>Introduction à JavaScript</h2><p>JavaScript est un langage de programmation dynamique qui s'exécute dans le navigateur. Il permet de rendre les pages web interactives, comme ajouter des animations, manipuler des formulaires, ou créer des jeux en ligne.</p><h3>Les Variables</h3><p>En JavaScript, les variables sont utilisées pour stocker des données. Vous pouvez utiliser <code>let</code> ou <code>const</code> pour déclarer des variables. Par exemple, <code>let nombre = 10;</code> déclare une variable qui stocke la valeur 10. La différence entre <code>let</code> et <code>const</code> est que <code>const</code> crée une variable dont la valeur ne peut pas changer.</p><h3>Les Fonctions</h3><p>Les fonctions sont des blocs de code réutilisables. Une fonction peut être déclarée comme ceci : <code>function direBonjour() { alert('Bonjour !'); }</code>. Elle peut aussi accepter des paramètres pour traiter différentes valeurs : <code>function addition(a, b) { return a + b; }</code>.</p><h3>Les Boucles</h3><p>Les boucles permettent d'exécuter une action plusieurs fois. Par exemple, la boucle <code>for</code> peut être utilisée pour itérer sur un tableau : <code>for(let i = 0; i < tableau.length; i++) { console.log(tableau[i]); }</code>. D'autres types de boucles incluent <code>while</code> et <code>do...while</code>.</p>",
+        "excerpt": "JavaScript est un langage de programmation qui permet d'ajouter de l'interactivité à vos pages web. Il est essentiel pour les développeurs front-end...",
+        "image": "js.png",
+        "author": "Marie Lefèvre",
+        "avatar": "marie.jpg",
+        "createdAt": "2024-08-15"
+    },
+    {
+        "id": 3,
+        "title": "Comprendre React : Les composants, les Hooks et l'état",
+        "content": "<h2>React, c'est quoi ?</h2><p>React est une bibliothèque JavaScript populaire pour construire des interfaces utilisateur. Elle repose sur le concept de composants, qui sont des morceaux réutilisables d'UI (User Interface).</p><h3>Les Composants</h3><p>Les composants peuvent être de type fonctionnel ou de classe. Un composant fonctionnel est une simple fonction qui renvoie du JSX : <code>const MonComposant = () => &lt;h1&gt;Bonjour, monde !&lt;/h1&gt;;</code>. Les composants de classe, bien que moins utilisés aujourd'hui, peuvent encore être trouvés dans les anciens projets.</p><h3>Les Hooks</h3><p>Les hooks comme <code>useState</code> et <code>useEffect</code> vous permettent de gérer l'état et les effets secondaires dans vos composants fonctionnels. Par exemple, <code>useState</code> permet de créer une variable d'état et une fonction pour la mettre à jour : <code>const [compteur, setCompteur] = useState(0);</code>. <code>useEffect</code> est utilisé pour gérer les effets de bord comme les appels API ou les événements du cycle de vie des composants.</p><h3>Le rendu conditionnel</h3><p>React permet aussi de gérer le rendu conditionnel en fonction de l'état ou des props d'un composant. Par exemple, <code>{isLoggedIn ? &lt;Dashboard /&gt; : &lt;Login /&gt;}</code> affichera le composant <code>Dashboard</code> si l'utilisateur est connecté, sinon le composant <code>Login</code>.</p>",
+        "excerpt": "React est une bibliothèque JavaScript pour construire des interfaces utilisateur interactives. Il est basé sur des composants réutilisables...",
+        "image": "reactJS.png",
+        "author": "Sophie Martin",
+        "avatar": "sophie.jpg",
+        "createdAt": "2024-07-20"
+    },
+    {
+        "id": 4,
+        "title": "Développer une API RESTful avec Node.js et Express",
+        "content": "<h2>Introduction à Node.js</h2><p>Node.js est une plateforme qui permet d'exécuter du JavaScript côté serveur. Cela signifie que vous pouvez utiliser le même langage de programmation pour vos applications back-end et front-end, ce qui simplifie le développement fullstack.</p><h3>Express.js</h3><p>Express est un framework minimaliste pour Node.js qui facilite la création d'API et la gestion des routes. Par exemple, vous pouvez rapidement créer une API RESTful avec quelques lignes de code :</p><pre><code>const express = require('express'); const app = express(); app.get('/', (req, res) => res.send('Bienvenue sur mon API !')); app.listen(3000, () => console.log('Serveur lancé sur le port 3000'));</code></pre><h3>Les Middlewares</h3><p>Express utilise des middlewares, qui sont des fonctions exécutées avant de répondre à une requête. Cela permet de gérer l'authentification, la journalisation des requêtes, ou encore la validation des données. Par exemple :</p><pre><code>app.use((req, res, next) => { console.log('Requête reçue à ' + new Date().toISOString()); next(); });</code></pre>",
+        "excerpt": "Node.js permet d'exécuter du JavaScript côté serveur, simplifiant ainsi le développement fullstack. Avec Express, un framework minimaliste...",
+        "image": "node.png",
+        "author": "Pierre Lambert",
+        "avatar": "pierre.jpg",
+        "createdAt": "2024-06-10"
+    },
+    {
+        "id": 5,
+        "title": "Devenir un développeur Fullstack : Le guide complet",
+        "content": "<h2>Qu'est-ce qu'un développeur Fullstack ?</h2><p>Un développeur Fullstack est capable de travailler à la fois sur la partie front-end et back-end d'une application. Cela signifie qu'il maîtrise les technologies nécessaires pour créer des interfaces utilisateur interactives, ainsi que celles pour gérer les bases de données et les API.</p><h3>Les technologies du front-end</h3><p>Pour le front-end, vous devez être à l'aise avec HTML, CSS et JavaScript. Les frameworks comme React ou Vue.js permettent de construire des interfaces dynamiques et réactives. Vous devez aussi maîtriser les concepts de gestion d'état et d'optimisation des performances côté client.</p><h3>Les compétences back-end</h3><p>Côté back-end, Node.js avec Express est une combinaison courante pour créer des API. Vous devrez aussi comprendre comment interagir avec des bases de données, comme MongoDB ou MySQL, et apprendre à gérer l'authentification, les autorisations, ainsi que la sécurité des applications.</p><h3>Les outils DevOps</h3><p>En tant que développeur Fullstack, vous devez également avoir des notions de déploiement et de maintenance des applications. Les outils comme Docker, Kubernetes, ainsi que les services cloud (AWS, Azure) sont des incontournables pour mettre en production et gérer vos applications à grande échelle.</p>",
+        "excerpt": "Un développeur Fullstack maîtrise le front-end et le back-end d'une application, travaillant avec des technologies comme HTML, CSS, JavaScript...",
+        "image": "fullstack.jpg",
+        "author": "Claire Dubois",
+        "avatar": "claire.jpg",
+        "createdAt": "2024-05-25"
+    }
+]

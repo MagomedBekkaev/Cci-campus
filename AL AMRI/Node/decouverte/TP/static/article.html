@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails de l'article - Développeur Fullstack</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #007bff;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Main content */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .article-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .article-details {
+            font-size: 14px;
+            color: #777;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .article-content {
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .article-content h2,
+        .article-content h3 {
+            color: #333;
+        }
+
+        .article-content pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        /* Image de l'article */
+        .article-image {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Back button */
+        .back-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #007bff;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .author-avatar {
+                width: 50px;
+                height: 50px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Mon Blog Technique
+    </header>
+
+    <div class="container">
+        <!-- Back button (en haut) -->
+        <a href="javascript:history.back()" class="back-button">Revenir en arrière</a>
+
+        <!-- Article header: Avatar, author, date -->
+        <div class="article-header">
+            <img src="images/claire.jpg" alt="Avatar de Claire Dubois" class="author-avatar">
+            <div class="article-details">
+                <span>Auteur : Claire Dubois</span> <br>
+                <span>Date : 25 Mai 2024</span>
+            </div>
+        </div>
+
+        <!-- Article title -->
+        <h1>Devenir un développeur Fullstack : Le guide complet</h1>
+
+        <!-- Image de l'article -->
+        <img src="images/fullstack.jpg" alt="Image de l'article" class="article-image">
+
+        <!-- Article content -->
+        <div class="article-content">
+            <h2>Qu'est-ce qu'un développeur Fullstack ?</h2>
+            <p>Un développeur Fullstack est capable de travailler à la fois sur la partie front-end et back-end d'une application. Cela signifie qu'il maîtrise les technologies nécessaires pour créer des interfaces utilisateur interactives, ainsi que celles pour gérer les bases de données et les API.</p>
+
+            <h3>Les technologies du front-end</h3>
+            <p>Pour le front-end, vous devez être à l'aise avec HTML, CSS et JavaScript. Les frameworks comme React ou Vue.js permettent de construire des interfaces dynamiques et réactives. Vous devez aussi maîtriser les concepts de gestion d'état et d'optimisation des performances côté client.</p>
+
+            <h3>Les compétences back-end</h3>
+            <p>Côté back-end, Node.js avec Express est une combinaison courante pour créer des API. Vous devrez aussi comprendre comment interagir avec des bases de données, comme MongoDB ou MySQL, et apprendre à gérer l'authentification, les autorisations, ainsi que la sécurité des applications.</p>
+
+            <h3>Les outils DevOps</h3>
+            <p>En tant que développeur Fullstack, vous devez également avoir des notions de déploiement et de maintenance des applications. Les outils comme Docker, Kubernetes, ainsi que les services cloud (AWS, Azure) sont des incontournables pour mettre en production et gérer vos applications à grande échelle.</p>
+
+            <pre><code>const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Bienvenue sur mon API Fullstack !');
+});
+
+app.listen(3000, () => {
+  console.log('Serveur lancé sur le port 3000');
+});</code></pre>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Mon Blog Technique - Tous droits réservés.
+    </footer>
+
+</body>
+
+</html>
