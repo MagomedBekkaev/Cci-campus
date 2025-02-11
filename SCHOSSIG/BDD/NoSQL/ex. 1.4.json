@@ -1,0 +1,42 @@
+{
+    "Commandes": [
+        {
+            "idCommande": 1,
+            "dateCommande": "2020-01-01",
+            "dateLivraison": "2020-01-02",
+            "Pizzas": [
+            {
+                "idPizza": 1,
+                "nomPizza": "Margherita",
+                "prixVentePizza": 8.5,
+                "Compositions": [
+                    {
+                        "idIngredient": 1,
+                        "idPizza": 1,
+                        "quantite": 200
+                    }
+                ]}
+            ]
+        }
+    ],
+    "Ingredients": [
+        {
+            "idIngredient": 1,
+            "symboleUnite": "g",
+            "Unites": {
+                "symboleUnite": "g",
+                "libelleUnite": "gramme"
+            }
+        }
+    ],
+    "Employes": [
+        {
+            "idEmploye": 1,
+            "nomEmploye": "Dupont",
+            "prenomEmploye": "Jean",
+            "dateNaissance": "1990-01-01",
+            "salaireMensuel": 1500,
+            "dateEmbauche": "2020-01-01"
+        }
+    ]
+}
