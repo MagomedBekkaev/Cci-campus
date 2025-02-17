@@ -33,8 +33,30 @@ const deleteUser = async (email) => {
     }
 };
 
+const getAllUsers = async () => {
+    try {
+        const users = await User.findAll();
+        return users;
+    } catch (error) {
+        console.error('Erreur lors de la récupération des utilisateurs :', error);
+        throw error;
+    }
+};
+
+const getUserById = async (id) => {
+    try {
+        const user = await userRepository.findUserById(id);
+        return user;
+    } catch (error) {
+        console.error('Erreur lors de la récupération de l’utilisateur :', error);
+        throw error;
+    }
+}
+
 module.exports = {
     createUser,
     updateUser,
-    deleteUser
+    deleteUser,
+    getAllUsers,
+    getUserById
 };

@@ -16,9 +16,16 @@ const getAllUsers = async () => {
     return await User.findAll()
 };
 
+const findUserById = async (id) => {
+    const user = await User.findByPk(id)
+
+    return user;
+};
+
 module.exports = {
     createUser,
     updateUser,
     deleteUser,
-    getAllUsers
+    getAllUsers,
+    findUserById
 };
