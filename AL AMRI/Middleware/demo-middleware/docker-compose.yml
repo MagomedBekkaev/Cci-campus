@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:latest
+    container_name: postgres_demo
+    restart: always
+    environment:
+      POSTGRES_USER: sofiane
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: demo
+    ports:
+      - "5435:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    container_name: adminer_demo
+    restart: always
+    ports:
+      - "8090:8080"
+
+volumes:
+  postgres_data:
